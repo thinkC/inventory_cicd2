@@ -11,7 +11,7 @@ pipeline {
         steps {
         pwsh(script: 'docker images -a')
         pwsh(script: """
-        cd inventory_cicd2/
+       
         docker images -a
         docker build -t inventoryfrnt .
         docker images -a
